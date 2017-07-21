@@ -1,0 +1,38 @@
+<section>
+  <div class="page-header">
+    <h1>{{vm.equipment._id ? 'Edit Equipment' : 'Dusty amp, or unused cable? Loan it to someone else!'}}</h1>
+  </div>
+  <div class="col-md-12">
+    <form name="vm.form.equipmentForm" class="form-horizontal" ng-submit="vm.save(vm.form.equipmentForm.$valid)" novalidate>
+      <fieldset>
+        <div class="form-group" show-errors>
+          <label class="control-label" for="name">Gear</label>
+          <input name="name" type="text" ng-model="vm.equipment.name" id="name" class="form-control" placeholder="What do you have to share?" required>
+          <div ng-messages="vm.form.equipmentForm.name.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Equipment name is required.</p>
+          </div>
+        </div>
+        <div class="form-group" show-errors>
+          <label class="control-label" for="name">Notes</label>
+          <input name="notes" type="text" ng-model="vm.equipment.notes" id="notes" class="form-control" placeholder="Anything special about this piece of gear?" required>
+          <div ng-messages="vm.form.equipmentForm.name.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Let your bandmates know what's up with this.</p>
+          </div>
+        </div>
+<!--         <div class="form-group" show-errors>
+  <label class="control-label" for="name">Image</label>
+  <input type="file" type="text" ng-model="vm.equipment.name" id="name" class="form-control" placeholder="" >
+  <div ng-messages="vm.form.equipmentForm.name.$error" role="alert">
+    <p class="help-block error-text" ng-message="required">Upload an image of what you've got.</p>
+</div>
+</div> -->
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">{{vm.equipment._id ? 'Update' : 'Create'}}</button>
+        </div>
+        <div ng-show="vm.error" class="text-danger">
+          <strong ng-bind="vm.error"></strong>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</section>
