@@ -1,4 +1,4 @@
-[![Screen Capture](https://github.com/Dagzy/meandeploy/modules/core/client/img/brand/Untitled.jpg)]
+[![Screen Capture](https://github.com/Dagzy/meandeploy/modules/core/client/img/brand/Untitled.jpg)](https://github.com)
 
 Master Branch: 
 [![Build Status](https://travis-ci.org/meanjs/mean.svg?branch=master)](https://travis-ci.org/meanjs/mean)
