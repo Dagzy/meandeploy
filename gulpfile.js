@@ -12,6 +12,8 @@ var _ = require('lodash'),
   plugins = gulpLoadPlugins(),
   path = require('path');
 
+process.env.MONGOLAB_URI="mongodb://admin:admin@ds125623.mlab.com:25623/reduxdb"
+
 // Set NODE_ENV to 'test'
 gulp.task('env:test', function () {
   process.env.NODE_ENV = 'test';

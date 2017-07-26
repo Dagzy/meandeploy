@@ -21,6 +21,10 @@ var EquipmentSchema = new Schema({
     default: '',
     trim: true
   },
+  image: {
+    type: String,
+    default: '',
+  },
   created: {
     type: Date,
     default: Date.now

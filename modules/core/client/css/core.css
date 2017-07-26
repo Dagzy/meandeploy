@@ -34,5 +34,18 @@ a:hover .header-profile-image {
   padding-bottom: 11px !important;
 }
 .pushCal{
-  margin-bottom: 100px !important;
+  margin-top: -775px !important;
+  text-align: center;
+  /* margin-left: 350px !important; */
+}
+h1{
+  text-align: center;
+}
+.btnPush{
+  text-align: center;
+}
+.title{
+  color: white;
+  text-align: center;
+  /* margin-left: 375px; */
 }
